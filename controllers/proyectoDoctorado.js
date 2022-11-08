@@ -60,8 +60,10 @@ exports.postActualizarProyectoDoctorado=(req,res)=>{
     //UPDATE ProyectoDoctorado SET WHERE id=
     console.log(req.body)
     ProyectoDoctorado.update({
-        departamento: req.body.departamento,
-        nombre: req.body.nombre},{
+        area: req.body.area,
+        duracion: req.body.duracion,
+        tema: req.body.tema,
+        descripcion: req.body.descripcion},{
         where:{
             id: req.body.id
         }
