@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 const {applyRelations} = require('./relations');
 //objeto de conexión
 
-const sequelize = new Sequelize('act_extra_2','admin','Tomlinson20:)',{
+const sequelize = new Sequelize('act_extra_2','admin','password',{
     dialect:'mysql',
     host:'database-1.cnpx6kyynieb.us-east-1.rds.amazonaws.com',
     dialectOptions:{
